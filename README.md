@@ -69,8 +69,9 @@ Enabled = false
 Y.Toggle({
 Text = "Auto Slash",
 Callback = function(Value)
-_G.Attack = Value
-while _G.Attack do
+_G.Slash = Value
+while _G.Slash do
+task.wait(0.1)
     local args = {
         [1] = "Slash"
     }
